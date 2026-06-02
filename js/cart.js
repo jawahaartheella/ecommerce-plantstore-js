@@ -43,7 +43,7 @@ function renderCartPage(cartList, allProductsList) {
             `
         document.getElementById("cartContainer").insertAdjacentHTML("afterbegin", cartListContainer);
         for(let p of matchingProducts) {
-            let itemQuantity = Number(cartListItems.find(i => p.id === Number(i.productId)).quantity);
+            let itemQuantity = Number(cartList.find(i => p.id === Number(i.productId)).quantity);
             document.getElementById("cartList").insertAdjacentHTML("beforeend", createCartItem(p, itemQuantity));
             orderSummary.subTotal = getSubTotal(p, itemQuantity, true);
             orderSummary.totalLeafCount += (itemQuantity * p.leafCount);
