@@ -1,0 +1,49 @@
+/********** EXPLORE PLANTS SECTION ***********/
+.explore-plants-section {
+    background: url('../../assets/plant-background.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 96px 156px;
+    margin-bottom: 96px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore-plants-title {
+    margin: 0 0 16px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.explore-plants-description {
+    margin: 0 272px 32px;
+    font-size: 18px;
+}
+
+.explore-plants-button {
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 8px;
+    color: rgb(16, 185, 129);
+    display: flex;
+    gap: 8px;
+    outline: 0;
+    padding: 12px 32px;
+    cursor: pointer;
+}
+
+.explore-btn-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.explore-btn-icon {
+    width: 20px;
+    height: 20px;
+}   

@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "categoryName": "Indoor",
+        "label": "🏠",
+        "name": "Indoor Plants"
+    },
+    {
+        "id": 2,
+        "categoryName": "Outdoor",
+        "label": "🌳",
+        "name": "Outdoor Plants"
+    },
+    {
+        "id": 3,
+        "categoryName": "Succulent",
+        "label": "🌵",
+        "name": "Succulents"
+    },
+    {
+        "id": 4,
+        "categoryName": "Flowering",
+        "label": "🌸",
+        "name": "Flowering Plants"
+    },
+    {
+        "id": 5,
+        "categoryName": "Herbs",
+        "label": "🌿",
+        "name": "Herbs & Edibles"
+    }
+]

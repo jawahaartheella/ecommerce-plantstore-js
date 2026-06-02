@@ -1,0 +1,148 @@
+/*********** PRODUCT CARD ***********/
+.product-card-container {
+    /* width: 387px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgb(229, 231, 235);
+}
+
+.product-card-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.product-details-link {
+    position: relative;
+    display: block;
+}
+
+.product-card-image {
+    width: 100%;
+    height: 256px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.discount-percent-pill {
+    position: absolute;
+    padding: 4px 12px;
+    border-radius: 16px;
+    background-color: lab(92.243 10.2865 3.83865);
+    color: lab(33.7174 55.8993 41.0293);
+    top: 12px;
+    right: 12px;
+}   
+
+.product-card-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card-title {
+    margin: 0 0 4px;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.product-card-description {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    text-wrap: auto;
+    margin-bottom: 12px;
+}
+
+.plant-needs-item  {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.plant-needs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.plant-needs-text {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 4px 8px;
+}
+
+.plant-pricing-contianer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.plant-pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.discount-price {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.actual-price {
+    font-size: 14px;
+    text-decoration-line: line-through;
+}
+
+/********** LEAF COUNT **********/
+.leaf-count-pill {
+    background-color: rgba(245, 158, 11, 0.2);
+    color: rgb(245, 158, 11);
+    padding: 4px 12px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.leaf-count-icon {
+    width: 12px;
+    height: 12px;
+}
+
+.leaf-count {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+/********** ADD CART BUTTON **********/
+.add-cart-btn {
+    border: none;
+    outline: none;
+    color: white;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    gap: 8px;
+    border-radius: 8px;
+    background-color: rgb(16, 185, 129);
+    cursor: pointer;
+}
+
+.add-cart-btn:hover {
+    background-color: rgb(5, 150, 105);
+}
+
+.add-cart-icon {
+    width: 16px;
+    height: 16px;
+}

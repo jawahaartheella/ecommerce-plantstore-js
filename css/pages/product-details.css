@@ -1,0 +1,201 @@
+/********** PRODUCT DETAILS PAGE ***********/
+.product-details-section {
+    padding: 48px 147px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+}
+
+.product-image-contianer {
+    width: 100%;
+}
+
+.product-image {
+    width: 100%;
+    height: 464px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid rgb(229, 231, 235);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.product-header-container {
+    margin-bottom: 24px;
+}
+
+.product-header {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+.product-pricing-container {
+    display: flex;
+    gap: 16px;
+    align-items: start;
+    justify-content: start;
+    margin-bottom: 16px;
+}
+
+.display-price {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.original-price {
+    font-size: 18px;
+    text-decoration-line: line-through;
+    margin-top: 5px;
+}
+
+.product-description {
+    font-size: 18px;
+    margin: 0;
+}
+
+.requirements-list-container {
+    padding: 24px 0;
+    margin-bottom: 24px;
+}
+
+.care-requirement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.care-requirements-header {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.requirements-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.requirement-type {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.requirement-intensity {
+    font-weight: 600;
+}
+
+.cart-quantity-container {
+    margin-bottom: 24px;
+}
+
+.quantity-header {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.quantity-count-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.quantity {
+    font-size: 20px;
+    font-weight: 600;
+    width: 32px;
+    text-align: center;
+}
+
+.count-controls {
+    background-color: rgb(243, 244, 246);
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 8px;
+    color: rgb(16, 185, 129);
+    padding: 8px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.count-controls:hover {
+    background-color: rgb(229, 231, 235);
+}
+
+.count-control-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.add-cart-button {
+    border: 0;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    padding: 12px 16px;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: rgb(16, 185, 129);
+    color: #fff;
+    cursor: pointer;
+}
+
+.add-cart-button:hover {
+    background-color: rgb(5, 150, 105);
+}
+
+.cart-btn-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.leaf-reward-container {
+    background-color: rgba(245, 158, 11, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.leaf-reward-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.leaf-reward-header {
+    font-weight: 600px;
+    margin: 0;
+}
+
+.leaf-reward-description {
+    font-size: 14px;
+    margin: 0;
+}
+
+/********** RELATED PRODUCTS SECTION ***********/
+.related-products-container {
+    padding: 64px 147px;
+}
+
+.related-products-header {
+    font-size: 30px;
+    margin: 0 0 32px;
+    font-weight: 700;
+}
+
+.related-products-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}

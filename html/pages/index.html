@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/lucide@0.378.0"></script>
+        <link rel="stylesheet" href="../../css/main.css">
+        <link rel="stylesheet" href="../../css/shared/navbar.css">
+        <link rel="stylesheet" href="../../css/shared/footer.css">
+        <link rel="stylesheet" href="../../css/shared/cta-section.css">
+        <link rel="stylesheet" href="../../css/shared/product-card.css">
+        <link rel="stylesheet" href="../../css/pages/home.css">
+        <link rel="stylesheet" href="../../css/responsive/mobile.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <title>GreenLeaf | Home</title>
+    </head>
+    <body>
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Bring Nature Into Your Home</h1>
+                <p class="hero-description">Discover our curated collection of premium plants and transform your space into a green sanctuary.</p>
+                <div class="hero-buttons">
+                    <button class="hero-shopnow">
+                        <span class="shopnow-text">Shop Now</span>
+                        <i class="hero-chevron" data-lucide="chevron-right"></i>
+                    </button>
+                    <button class="hero-learn-more">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRENDING DEALS SECTION -->
+        <section class="trending-deals-section">
+            <div class="deals-header">
+                <h2 class="deals-title">This week's Top Deals</h2>
+                <a href="">View All</a>
+            </div>
+            <div class="deals-timer-container">
+                <h5 class="timer-title">Sale ends in:</h5>
+                <div class="deals-timer">
+                    <div class="timer-section">
+                        <span class="timer-count" id="daysCount">0</span>
+                        <span class="timer-type">Days</span>
+                    </div>
+                    <span class="timer-colon">:</span>
+                    <div class="timer-section">
+                        <span class="timer-count" id="hoursCount">0</span>
+                        <span class="timer-type">Hours</span>
+                    </div>
+                    <span class="timer-colon">:</span>
+                    <div class="timer-section">
+                        <span class="timer-count" id="minutesCount">0</span>
+                        <span class="timer-type">Minutes</span>
+                    </div>
+                    <span class="timer-colon">:</span>
+                    <div class="timer-section">
+                        <span class="timer-count" id="secondsCount">0</span>
+                        <span class="timer-type">Seconds</span>
+                    </div>
+                </div>
+            </div>
+            <div id="dealsList" class="deals-product-list">
+                
+            </div>
+        </section>
+
+        <!-- SHOP BY CATEGORY SECTION -->
+        <section class="plant-category-section">
+            <h2 class="catergory-header">Shop by Category</h2>
+            <div class="category-list-container" id="categoryList">
+                
+            </div>
+        </section>
+
+        <section class="new-arrivals-section">
+            <div class="new-arrivals-header">
+                <h2 class="new-arrivals-title">New Arrivals</h2>
+                <a href="">View All</a>
+            </div>
+            <div class="new-arrivals-list" id="newArrivalsList">
+
+            </div>
+        </section>
+
+        <!-- BEST FEATURES SECTION -->
+        <section class="best-features-section">
+            <h2 class="best-features-title">Earn Rewards with Every Purchase</h2>
+            <div class="best-features-list">
+                <div class="feature-content">
+                    <i data-lucide="leaf" class="feature-icon"></i>
+                    <h3 class="feature-title">Earn Leaves</h3>
+                    <p class="feature-decription">Earn Leaves points with every purchase. Watch them grow just like your plants!</p>
+                </div>
+                <div class="feature-content">
+                    <i data-lucide="award" class="feature-icon"></i>
+                    <h3 class="feature-title">Unlock Benifits</h3>
+                    <p class="feature-decription">Reach milestones to unlock exclusive discounts, early access, and special offers.</p>
+                </div>
+                <div class="feature-content">
+                    <i data-lucide="truck" class="feature-icon"></i>
+                    <h3 class="feature-title">Fast Delivery</h3>
+                    <p class="feature-decription">Enjoy free shipping on orders over $50. Your plants arrive fresh and healthy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCRIPTS -->
+        <script type="module" src="../../js/home.js"></script>
+    </body>
+</html>
+
+<!-- 🔁 Other positions for insertAdjacentHTML (FYI)
+    beforebegin → before element
+    afterbegin → inside, at start
+    beforeend → inside, at end
+    afterend → after element -->
+
+<!-- 🧠 What res.text() does
+    Reads the response body
+    Converts it into a string (HTML text)
+
+res.text() ->	HTML, plain text
+res.json() -> API data (JSON) -->

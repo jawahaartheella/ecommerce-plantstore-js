@@ -1,0 +1,54 @@
+/********************************************************* FOOTER *********************************************************/
+.footer-quick-access {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-description {
+    width: 310px;
+    color: #99a1b0;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+.footer-title-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-list-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.footer-item {
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.footer-divider {
+    border-bottom: 2px solid #99a1b0;
+    width: 25%;
+    margin: 40px auto;
+}
+
+.footer-social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-copyright {
+    align-items: center;
+    color: #99a1b0;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin: 30px 0 5px;
+}

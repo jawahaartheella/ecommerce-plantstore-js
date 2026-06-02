@@ -1,0 +1,627 @@
+@media(max-width: 768px) {
+
+    /* 
+        learn:
+        CSS state driven UI
+        state based UI Where:
+            class name represents UI state
+                Example:
+                    open
+                    active
+                    selected
+                    hidden
+                    disabled
+                    expanded
+            SUPER common frontend pattern.
+
+        DOM API + state management concepts. (look for this in chatgpt)
+    */
+
+    /********** NAVBAR STYLES ***********/
+    .nav-bar-container {
+        padding: 12px 30px;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+    }
+
+    .nav-cart-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .cart-badge {
+        width: 18px;
+        height: 18px;
+        font-size: 11px;
+    }
+
+    .nav-separation {
+        display: flex;
+        justify-self: center;
+        padding-top: 12px;
+        width: 100%;
+        border-bottom: 1px solid #000;
+    }
+
+    .hamburger-menu-btn {
+        border: 0;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .hamburger-menu-icons {
+        width: 24px;
+        height: 24px;
+    }
+
+    .collapse-menu-button {
+        display: none;
+    }
+
+    .close-menu-icon {
+        display: none;
+    }
+
+    .close-menu-icon.show {
+        display: block;
+    }
+
+    .open-menu-icon.hide {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+        background-color: white;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transform: translateY(-10px);
+        transition: 
+            max-height 0.5s ease,
+            opaicty 0.5s ease,
+            transform 0.5s ease;
+    }
+
+    .nav-menu.open {
+        max-height: 300px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav-menu-list {
+        list-style: none;
+        padding: 16px 0 0;
+        margin: 0;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .nav-menu-item {
+        padding: 8px 16px;
+        width: 100%;
+    }
+
+    /********** FOOTER STYLES ***********/
+    .footer-quick-access {
+        display: block;
+    }
+
+    .footer-description {
+        font-size: 14px;
+        margin: 8px 0 30px;
+    }
+
+    .footer-item-container {
+        padding: 0 26px;
+    }
+
+    .footer-list-title {
+        justify-content: start;
+    }
+
+    .footer-list {
+        padding: 0;
+    }
+
+    .footer-divider {
+        width: 75%;
+    }
+
+    .footer-social-icons {
+        width: 20px;
+        height: 20px    ;
+    }
+
+    .footer-copyright {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    /******************** HOME PAGE STYLES *********************/
+    /* HERO SECTION */
+    .hero-section {
+        padding: 30px;
+    }
+
+    .hero-content {
+        padding: 0;
+    }
+
+    .hero-title {
+        font-size: 36px;
+        line-height: 40px;
+        padding: 0 26px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons > button {
+        width: 100%;
+    }
+
+    /* TRENDING DEALS, NEW ARRIVALS AND BEST FEATURES STYLING */
+    .trending-deals-section {
+        padding: 64px 26px;
+    }
+
+    .deals-header {
+        justify-content: start;
+        gap: 16px;
+        align-items: start;
+    }
+
+    .deals-title, .new-arrivals-title, .best-features-title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .deals-header > a, 
+    .new-arrivals-header > a {
+        flex: none;
+        border: 1px solid rgb(229, 231, 235);
+        border-radius: 8px;
+        padding: 4px 16px;
+        margin-top: 8px;
+    }
+
+    .deals-product-list, .new-arrivals-list, .best-features-list {
+        grid-template-columns: 1fr;
+    }
+
+    .plant-category-section, .new-arrivals-section, .best-features-section {
+        padding: 0 26px 64px;
+    }
+
+    .category-list-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* EXPLORE MORE SECTON STYLES */
+    .explore-plants-section  {
+        margin-bottom: 36px;
+        padding: 50px 0;
+    }
+
+    .explore-plants-title {
+        font-size: 30px;
+        text-align: center;
+        line-height: 36px;
+        padding: 0 80px;
+    }
+
+    .explore-plants-description {
+        margin: 0 0 32px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    /******************** PRODUCTS PAGE STYLES *********************/
+    .products-header-container {
+        padding: 48px 16px;
+    }
+
+    .products-header-title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .products-container {
+        padding: 0 16px 48px;
+        display: block;
+    }
+
+    /* FILTERS STYLING */
+    .filter-dropdown {
+        display: flex;
+    }
+
+    .filters-form  {
+        max-height: 0;
+        padding: 0;
+        opacity: 0;
+        overflow: hidden;
+        transform: translateY(-10px);
+        transition: 
+            display 0.5s ease,
+            padding 0.5s ease,
+            opacity 0.5s ease,
+            transform 0.5s ease;
+
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+
+    .filters-form.show {
+        max-height: 800px;
+        padding: 24px;
+        opacity: 1;
+        margin-bottom: 16px;
+        transform: translateY(0);
+    }
+
+    .dropup-icon {
+        display: none;
+    }
+
+    .dropup-icon.show {
+        display: block;
+    }
+
+    .dropdown-icon.hide {
+        display: none;
+    }
+
+    /* PRODUCT LIST STYLING */
+    .products-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    /* SHARED PRODUCT CARD STYLING */
+    .m-product-card-container {
+        display: flex;
+        align-items: stretch;
+        padding: 12px;
+        gap: 16px;
+        border: 1px solid rgb(213 213 213);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .m-product-card-image {
+        width: 96px;
+        height: 96px;
+        border-radius: 8px;
+        flex: none;
+        object-fit: cover;
+        object-position: center;
+        border: 1px solid rgb(229, 231, 235);
+    }
+
+    .m-product-card-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+
+    .m-product-card-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 4px;
+    }
+
+    .m-product-card-title {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+    }
+
+    .m-discount-percent-pill  {
+        padding: 2px 8px;
+        line-height: 18px;
+        font-size: 12px;
+        border-radius: 16px;
+        background-color: lab(92.243 10.2865 3.83865);
+        color: lab(33.7174 55.8993 41.0293);
+    }
+
+    .m-leaf-count-pill {
+        padding: 2px 8px;
+        background-color: rgba(245, 158, 11, 0.2);
+        color: rgb(245, 158, 11);
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .m-leaf-count {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .m-leaf-count-icon {
+        width: 12px;
+        height: 12px;
+    }
+
+    .m-product-card-description {
+        font-size: 11px;
+        color: #000;
+        line-height: 18px;
+        padding: 0;
+        text-wrap: auto;
+        margin: 0 0 12px;
+    }
+
+    .m-plant-pricing {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        margin-top: auto;
+        margin-bottom: 4px;
+        gap: 8px;
+    }
+
+    .m-display-price {
+        font-size: 16px;
+        line-height: 18px;
+        color: #000;
+        font-weight: 700;
+    }
+
+    .m-actual-price {
+        text-decoration-line: line-through;
+        color: #000;
+        font-size: 11px;
+    }
+
+    /********** ABOUT PAGE STYLING ***********/
+    .about-header-container {
+        padding: 64px 16px;
+    }
+
+    .about-header {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .about-header-text  {
+        font-size: 18px;
+        margin: 0;
+        line-height: 28px;
+    }
+
+    .org-story-container {
+        padding: 0 16px 64px;
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .story-content-container {
+        width: 100%;
+        padding-right: 16px;
+    }
+
+    .story-header {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .story-para {
+        line-height: 26px;
+    }
+
+    .story-image-container {
+        flex: none;
+        width: 100%;
+    }
+
+    .org-values-container {
+        padding: 0 16px 64px;
+    }
+
+    .org-values-header {
+        font-size: 30px;
+    }
+
+    .org-values-list {
+        display: block;
+    }
+
+    .value-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .org-team-container {
+        padding: 0 16px 64px;
+    }
+
+    .org-team-header {
+        font-size: 30px;
+        margin: 0 0 24px;
+    }
+
+    .org-team-description {
+        margin: 0 0 36px;
+    }
+
+    /********** PRODUCT DETAILS PAGE STYLING ***********/
+    .product-details-section {
+        padding: 64px 16px;
+        display: block;
+    }
+
+    .product-header-container {
+        margin: 0;
+    }
+
+    .product-header {
+        font-size: 30px;
+    }
+
+    .display-price {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .product-description {
+        font-size: 16px;
+    }
+
+    .care-requirements-header {
+        font-size: 14px;
+    }
+
+    .requirement-type {
+        font-size: 12px;
+    }
+
+    .requirement-intensity {
+        font-size: 13px;
+    }
+
+    .add-cart-button {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+
+    .cart-btn-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .leaf-reward-container {
+        padding: 12px;
+    }
+
+    .leaf-reward-icon {
+        width: 20px;
+        height: 20px;
+    } 
+
+    .leaf-reward-header {
+        font-size: 14px;
+    }
+
+    .leaf-reward-description {
+        font-size: 12px;
+    }
+
+    .related-products-container {
+        padding: 0 16px 64px;
+    }
+
+    .related-products-header {
+        font-size: 26px;
+    }
+
+    .related-products-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    /********** CART PAGE STYLING ***********/
+    .cart-header {
+        font-size: 30px;
+        padding: 48px 16px 36px;
+        margin: 0;
+    }
+
+    .cart-section {
+        padding: 0 16px 64px;
+    }
+
+    .cart-content-container {
+        display: block;
+    }
+
+    .cart-list-container {
+        margin-bottom: 24px;
+    }
+
+    .cart-list-item {
+        padding: 16px;
+    }
+
+    .cart-product-content {
+        flex-direction: column;
+    }
+
+    .cart-product-description {
+        font-size: 12px;
+    }
+
+    .cart-product-price {
+        display: none;
+    }
+
+    .cummulative-product-price {
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .cart-product-actions {
+        align-items: center;
+        justify-content: start;
+        gap: 24px;
+        flex-flow: row-reverse;
+        margin-bottom: 2px;
+        align-self: start;
+    }
+
+    .product-count-actions {
+        padding: 0;
+    }
+
+    .cart-summary-title {
+        font-size: 20px;
+    }
+
+    .order-total {
+        font-size: 20px;
+    }
+
+    .cart-leaf-container {
+        padding: 12px;
+    }
+
+    .cart-leaf-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .cart-leaf-title {
+        font-size: 14px;
+    }
+
+    .cart-leaf-description {
+        font-size: 11px;
+    }
+}   

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/lucide@0.378.0"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/shared/navbar.css">
+    <link rel="stylesheet" href="../../css/shared/footer.css">
+    <link rel="stylesheet" href="../../css/pages/checkout.css">
+    <link rel="stylesheet" href="../../css/responsive/mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>GreenLeaf | Checkout</title>
+</head>
+<body>
+    <header class="checkout-header-container">
+        <h1 class="checkout-header">Checkout</h1>
+    </header>
+
+    <section class="checkout-section">
+        <form class="checkout-details-container">
+            <div class="checkout-address-container">
+                <h2 class="address-header">Shipping Address</h2>
+                <div class="name-container">
+                    <input type="text" class="checkout-input firstname-input" placeholder="First Name *" id="firstname">
+                    <input type="text" class="checkout-input secondname-input" placeholder="Second Name *" id="secondname">
+                </div>
+                <input type="email" class="checkout-input email-input" placeholder="Email *" id="email">
+                <input type="tel" class="checkout-input mobile-input" placeholder="Phone Number" id="mobile">
+                <input type="text" class="checkout-input address-line-input" placeholder="Street Address *" id="addressline">
+                <div class="state-details-container">
+                    <input type="text" class="checkout-input city-input" placeholder="City *" id="city">
+                    <select class="checkout-input state-select" id="stateSelect">
+                        <option value="default">Select State</option>
+                    </select>
+                </div>
+                <input type="number" class="checkout-input zipcode-input" placeholder="Zip Code *" id="zipcode">
+            </div>
+            <div class="checkout-payment-container">
+                <h2 class="payment-header">Payment Method</h2>
+                <input type="text" class="checkout-input card-holder-input" placeholder="Card Holder Name *" id="cardholder">
+                <input type="number" class="checkout-input card-number-input" placeholder="Card Numer *" id="cardnumber">
+                <div class="card-details-container">
+                    <input type="text" class="checkout-input expiry-input" placeholder="MM/YY *" id="cardexpiry">
+                    <input type="number" class="checkout-input cvc-input" placeholder="CVC *" id="cardcvc"> 
+                </div>
+            </div>
+            <button class="place-order-btn">Place Order</button>
+        </form>
+        <div class="checkout-summary-container">
+            <h2 class="summary-header">Order Summary</h2>
+            <div class="summary-items-list" id="summaryList">
+                
+            </div>
+            <div class="hrow"></div>
+            <div class="pricing-details-container">
+                <div class="pricing-item-container">
+                    <span class="pricing-category">Sub Total</span>
+                    <span class="pricing-amount" id="subTotalPrice"></span>
+                </div>
+                <div class="pricing-item-container">
+                    <span class="pricing-category">Shipping</span>
+                    <span class="pricing-amount" id="shippingPrice"></span>
+                </div>
+                <div class="pricing-item-container">
+                    <span class="pricing-category">Tax</span>
+                    <span class="pricing-amount" id="taxPrice"></span>
+                </div>
+            </div>
+            <div class="hrow"></div>
+            <div class="total-price-container">
+                <span>Total</span>
+                <span id="totalPrice"></span>
+            </div>
+            <div class="leaf-reward-container">
+                <i class="reward-icon" data-lucide="leaf"></i>
+                <p class="reward-text">Earn <span class="reward-count">63</span> leaves</p>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="../../js/checkout.js"></script>
+</body>
+</html>

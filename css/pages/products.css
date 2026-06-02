@@ -1,0 +1,207 @@
+/********************************************************* PRODUCTS PAGE STYLES *********************************************************/
+
+/********** PRODUCTS HEADER **********/
+.products-header-container {
+    padding: 48px 156px;
+}
+
+.products-header-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+.products-header-description {
+    margin: 0;
+}
+
+/********** PRODUCTS CONRAINER **********/
+
+.products-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 0 156px 96px;
+    position: relative;
+}
+
+/********** FILTERS **********/
+.filters-form {
+    position: sticky;
+    top: 24px;
+    padding: 24px;
+    width: 288px;
+    flex: none;
+    box-sizing: border-box;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+}
+
+.filter-dropdown {
+    display: none;
+    border: 1px solid rgb(229, 231, 235);
+    background-color: rgb(243, 244, 246);
+    border-radius: 8px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    color: rgb(16, 185, 129);
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+}
+
+.filter-dropdown:hover {
+    background-color: rgb(229, 231, 235);
+}
+
+.filter-dropdown-icon {
+    width: 16px;
+    height: 16px;
+    color: #000;
+}
+
+/* PRICE RANGE FILTER */
+
+.price-range-container {
+    margin: 0 0 24px;
+    width: 100%;
+}
+
+.price-range-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 16px;
+}
+
+.price-range-bar {
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.price-range-values {
+    font-size: 14px;
+    font-size: lighter;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}  
+
+/********** OTHER FILTERS **********/
+.filter-container {
+    margin: 0 0 24px;
+}
+
+.filter-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 16px;
+}
+
+.filter-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.filter-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 0 0 8px;
+}
+
+.filter-input {
+    cursor: pointer;
+}
+
+.filter-name {
+    font-size: 14px;
+    cursor: pointer;
+} 
+
+.offer-filter-input {
+    line-height: 18px;
+    width: 15px;
+    height: 15px;
+}
+
+.offer-filter-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/*********** CLEAR FILTERS BUTTON ***********/
+
+.clear-filters-btn {
+    background-color: rgb(243, 244, 246);
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 8px;
+    color: rgb(16, 185, 129);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.clear-filters-btn:hover {
+    background-color: rgb(229, 231, 235)
+}
+
+/********** ALL PRODUCTS LIST **********/
+.products-list-container {
+    width: 100%;
+}
+
+.products-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 24px;
+}
+
+.product-count-text {
+    font-size: 14px;
+    margin: 0;
+}
+
+.select-container {
+    position: relative;
+}
+
+.select-chevron-down {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.sorting-select {
+    background-color: rgb(243, 244, 246);
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 8px;
+    color: rgb(16, 185, 129);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 32px 8px 16px;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+}
+
+.sorting-select:hover {
+    background-color: rgb(229, 231, 235)
+}
+
+.products-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}

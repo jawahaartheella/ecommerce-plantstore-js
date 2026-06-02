@@ -1,0 +1,63 @@
+
+
+  {
+    "id": 7,
+    "imageUrl": "https://images.pexels.com/photos/5699665/pexels-photo-5699665.jpeg",
+    "name": "Spider Plant",
+    "description": "A fast-growing indoor plant with striped leaves and excellent adaptability.",
+    "waterNeed": 2,
+    "lightNeed": 2,
+    "discountPrice": 17.50,
+    "actualPrice": 24.00,
+    "leafCount": 12,
+    "discountPercent": 27
+  },
+  {
+    "id": 8,
+    "imageUrl": "https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg",
+    "name": "ZZ Plant",
+    "description": "A resilient low-light plant with waxy leaves that thrives with minimal care.",
+    "waterNeed": 1,
+    "lightNeed": 1,
+    "discountPrice": 29.99,
+    "actualPrice": 38.99,
+    "leafCount": 22,
+    "discountPercent": 23
+  },
+  {
+    "id": 9,
+    "imageUrl": "https://images.pexels.com/photos/1005058/pexels-photo-1005058.jpeg",
+    "name": "Boston Fern",
+    "description": "A lush hanging fern that adds freshness and texture to indoor spaces.",
+    "waterNeed": 3,
+    "lightNeed": 1,
+    "discountPrice": 26.40,
+    "actualPrice": 35.50,
+    "leafCount": 20,
+    "discountPercent": 26
+  },
+  {
+    "id": 10,
+    "imageUrl": "https://images.pexels.com/photos/2123482/pexels-photo-2123482.jpeg",
+    "name": "Pothos Golden",
+    "description": "A beginner-friendly trailing plant with vibrant green and yellow leaves.",
+    "waterNeed": 2,
+    "lightNeed": 2,
+    "discountPrice": 21.75,
+    "actualPrice": 29.99,
+    "leafCount": 16,
+    "discountPercent": 28
+  }
+
+We're on a mission to bring nature into every home and create a community of plant lovers who care for our planet.
+
+GreenLeaf started in 2020 as a small passion project by a group of plant enthusiasts who wanted to make premium plants accessible to everyone. What began in a small greenhouse has grown into a thriving community of thousands of plant lovers.
+Today, we carefully curate every plant in our collection, ensuring they meet our strict quality standards. We work directly with ethical growers and nurseries around the world to bring you the healthiest, most beautiful plants.
+Our commitment goes beyond just selling plants—we believe in educating our community, supporting sustainable practices, and creating a greener future for all.
+
+Every plant is hand-selected and inspected to ensure it's healthy and vibrant.
+We partner with eco-friendly growers and use sustainable packaging for all shipments.
+We believe in building a supportive community of plant lovers who share tips and experiences.
+We provide comprehensive care guides and tips to help your plants thrive at home.
+
+GreenLeaf is powered by a passionate team of plant experts, designers, and developers dedicated to making plant care accessible to everyone.

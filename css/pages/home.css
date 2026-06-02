@@ -1,0 +1,269 @@
+/********************************************************* HOME PAGE STYLES *********************************************************/
+
+/*********** HERO SECTION ***********/
+.hero-section {
+    background-image: url('../../assets/plant-background.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 300px 160px;
+    position: relative;
+}
+
+.hero-section::before {
+    background: rgba(255, 255, 255, 0.8);
+    content: "";
+    inset: 0;
+    position: absolute;
+}
+
+.hero-content {
+    color: rgb(31, 41, 55);
+    position: relative;
+    padding: 0 150px;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    line-height: 60px;
+}
+
+.hero-description {
+    font-size: 20px;
+    margin: 0 0 32px 0;
+    padding: 0 100px;
+    line-height: 28px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.hero-shopnow {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: rgb(16, 185, 129);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.hero-shopnow:hover {
+    background-color: rgb(5, 150, 105);
+}
+
+.shopnow-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.hero-chevron {
+    width: 16px;
+    height: 16px;
+}
+
+.hero-learn-more {
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(16, 185, 129);
+    cursor: pointer;
+    background-color: rgb(243, 244, 246);
+}
+
+.hero-learn-more:hover {
+    background-color: rgb(229, 231, 235);
+}
+
+/*********** TRENDING DEALS ***********/
+.trending-deals-section {
+    /* padding: 50px 120px; */
+    padding: 96px 156px;
+}
+
+.deals-timer-container {
+    padding: 24px;
+    margin-bottom: 32px;
+    /* background: linear-gradient(
+        to right,
+        #e8f5e9,   
+        #d7f0da,
+        #c8e6c9
+    ); */
+    /* background: linear-gradient(
+        to right,
+        #edf7ee,
+        #dff1df,
+        #d2ebd2
+    ); */
+    /* color: rgb(5, 150, 105); */  
+}
+
+.deals-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.deals-title {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+}
+
+.deals-timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.timer-title {
+    text-align: center;
+    margin: 0 0 16px;
+    font-size: 20px;
+}
+
+.timer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer-type {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.timer-count, .timer-colon {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.deals-product-list  {
+    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/********** SHOP BY CATEGORY SECTION **********/
+.plant-category-section {
+    padding: 0 156px 96px;
+}
+
+.catergory-header {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 48px;
+}
+
+.category-list-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+.category-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 8px;
+}
+
+.category-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.category-label {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.category-name {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/********** NEW ARRIVALS ***********/
+.new-arrivals-section {
+    padding: 0 156px 96px;
+}
+
+.new-arrivals-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.new-arrivals-title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.new-arrivals-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/********** BEST FEATURES ***********/
+.best-features-section {
+    padding: 0 156px 96px;
+}
+
+.best-features-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 48px;
+    text-align: center;
+}
+
+.best-features-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+}
+
+.feature-content {
+    text-align: center;
+}
+
+.feature-icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 0 0 16px;
+}
+
+.feature-title {
+    font-size: 20px;
+    margin-bottom: 0 0 8px;
+    font-weight: 600;
+}

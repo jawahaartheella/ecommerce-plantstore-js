@@ -1,0 +1,203 @@
+.checkout-header-container {
+    padding: 32px 147px;
+}
+
+.checkout-header {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 0;
+}
+
+.checkout-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+    padding: 48px 210px;
+    align-items: start;
+    position: relative;
+}
+
+.checkout-address-container,
+.checkout-payment-container,
+.checkout-summary-container {
+    padding: 24px;
+    border: 1px solid rgb(213, 213, 213);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 32px;
+}
+
+.checkout-summary-container {
+    position: sticky;
+    top: 32px;
+}
+
+.address-header, .payment-header, .summary-header {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 24px;
+}
+
+.checkout-input {
+    padding: 12px 16px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    border: 1px solid #000;
+    width: 100%;
+    margin-bottom: 24px;
+    outline: none;
+}
+
+.checkout-input:last-child {
+    margin-bottom: 0;
+}
+
+.name-container, 
+.state-details-container,
+.card-details-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.name-container > input,
+.state-details-container > input,
+.state-details-container > select,
+.card-details-container > input,
+.card-details-container {
+    margin: 0;
+}
+
+.state-select {
+    cursor: pointer;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.place-order-btn {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 12px 16px;
+    background-color: rgb;
+    background-color: rgb(16, 185, 129);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.place-order-btn:hover {
+    background-color: rgb(5, 150, 105);
+}
+
+.summary-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.summary-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-image {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 4px;
+}
+
+.item-name {
+    font-size: 14px;
+    font-weight: 600px;
+    margin: 0;
+}
+
+.item-quantity {
+    font-size: 12px;
+    margin: 0;
+}   
+
+.item-price {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.hrow {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    margin: 24px 0;
+}
+
+.pricing-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.pricing-item-container:last-child {
+    margin-bottom: 0;
+}
+
+.pricing-amount {
+    font-weight: 600;
+}
+
+.total-price-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.leaf-reward-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 12px;
+    background-color: rgba(245, 158, 11, 0.1);
+    border-radius: 8px;
+}
+
+.reward-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.reward-text {
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+

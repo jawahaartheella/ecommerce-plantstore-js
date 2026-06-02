@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/lucide@0.378.0"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/shared/navbar.css">
+    <link rel="stylesheet" href="../../css/shared/footer.css">
+    <link rel="stylesheet" href="../../css/shared/product-card.css">
+    <link rel="stylesheet" href="../../css/pages/products.css">
+    <link rel="stylesheet" href="../../css/responsive/mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>GreenLeaf | Products</title>
+</head>
+<body>
+    <!-- PRODUCTS HEADER SECTION -->
+    <section class="products-header">
+        <div class="products-header-container">
+            <h1 class="products-header-title">Our Plant Collection</h1>
+            <p class="products-header-description">Browse our curated collection of premium plants.</p>
+        </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+     <section class="products-container">
+         <button class="filter-dropdown" id="filterDropdown">
+            <span class="filter-dropdown-text">Filters</span>
+            <i data-lucide="chevron-down" id="dropdownIcon" class="filter-dropdown-icon dropdown-icon"></i>
+            <i data-lucide="chevron-up" id="dropupIcon" class="filter-dropdown-icon dropup-icon"></i>
+         </button>
+        <form class="filters-form" id="filterForm">
+            <div class="price-range-container">
+                <h5 class="price-range-title">Price Range</h5>
+                <input class="price-range-bar" id="priceRange" type="range" min="0" max="100" value="100">
+                <div class="price-range-values">
+                    <span>$0</span>
+                    <span>$<span id="maxPrice">100</span></span>
+                </div>
+            </div>
+            <div class="filter-container">
+                <h5 class="filter-title">Category</h5>
+                <ul class="filter-list">
+                    <li class="filter-item">
+                        <input class="filter-input category-filter" type="checkbox" id="indoor" value="Indoor">
+                        <label class="filter-name" for="indoor">Indoor</label>
+                    </li>
+                    <li class="filter-item">
+                        <input class="filter-input category-filter" type="checkbox" id="outdoor" value="Outdoor">
+                        <label class="filter-name" for="outdoor">Outdoor</label>
+                    </li>
+                    <li class="filter-item">
+                        <input class="filter-input category-filter" type="checkbox" id="succulents" value="Succulents">
+                        <label class="filter-name" for="succulents">Succulents</label>
+                    </li>
+                    <li class="filter-item">
+                        <input class="filter-input category-filter" type="checkbox" id="flowering" value="Flowering">
+                        <label class="filter-name" for="flowering">Flowering</label>
+                    </li>
+                    <li class="filter-item">
+                        <input class="filter-input category-filter" type="checkbox" id="herbs" value="Herbs">
+                        <label class="filter-name" for="herbs">Herbs</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-container">
+                <h5 class="filter-title">Sunlight</h5>
+                <ul class="filter-list">
+                    <li class="filter-item">
+                        <input class="filter-input sunlight-filter" type="checkbox" id="lowLight" value="Low">
+                        <label class="filter-name" for="lowLight">Low</label>
+                    </li>
+                    <li class="filter-item">
+                        <input class="filter-input sunlight-filter" type="checkbox" id="mediumLight" value="Medium">
+                        <label class="filter-name" for="mediumLight">Medium</label>
+                    </li>
+                    <li class="filter-item">
+                        <input class="filter-input sunlight-filter" type="checkbox" id="highLight" value="High">
+                        <label class="filter-name" for="highLight">High</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-container">
+                <h5 class="filter-title">Watering Needs</h5>
+                <ul class="filter-list">
+                    <li class="filter-item">
+                        <input class="filter-input water-filter" type="checkbox" id="lowWater" value="Low">
+                        <label class="filter-name" for="lowWater">Low</label>
+                    </li>
+                    <li class="filter-item">
+                        <input class="filter-input water-filter" type="checkbox" id="mediumWater" value="Medium">
+                        <label class="filter-name" for="mediumWater">Medium</label>
+                    </li>
+                    <li class="filter-item">
+                        <input class="filter-input water-filter" type="checkbox" id="highWater" value="High">
+                        <label class="filter-name" for="highWater">High</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-container">
+                <div class="filter-item">
+                    <input class="filter-input offer-filter-input" type="checkbox" id="offerFilter">
+                    <label class="filter-name offer-filter-name" for="offerFilter">Offer Only</label>
+                </div>
+            </div>
+            <button class="clear-filters-btn">Clear Filters</button>
+        </form>
+        <div class="products-list-container">
+            <div class="products-list-header">
+                <p class="product-count-text">Showing <span id="paginatedProducts">20</span> of <span id="allFilteredProducts">20</span> plants</p>
+                <div class="select-container">
+                    <select name="sort" id="sort" class="sorting-select">
+                        <option value="MOST_POPULAR" selected>Most Popular</option>
+                        <option value="NEWEST_FIRST">Newest First</option>
+                        <option value="PRICE_LOW_TO_HIGH">Price: Low to High</option>
+                        <option value="PRICE_HIGH_TO_LOW">Price: High to Low</option>
+                    </select>
+                    <i class="select-chevron-down" data-lucide="chevron-down"></i>
+                </div>
+            </div>
+            <div class="products-list" id="productsListContainer">
+
+            </div>
+        </div>
+     </section>
+
+    <script type="module" src="../../js/products.js"></script>
+</body>
+</html>

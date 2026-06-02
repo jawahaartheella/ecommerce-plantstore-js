@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Jawahaar Theella",
+    "role": "CEO",
+    "tagline": "Building a greener future through innovation and passion.",
+    "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Sophia Carter",
+    "role": "Lead Designer",
+    "tagline": "Crafting clean and intuitive experiences for plant lovers.",
+    "image": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Daniel Kim",
+    "role": "Frontend Developer",
+    "tagline": "Turning ideas into smooth and responsive interfaces.",
+    "image": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Emma Wilson",
+    "role": "Plant Specialist",
+    "tagline": "Helping every plant thrive with expert care guidance.",
+    "image": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Michael Brown",
+    "role": "Marketing Manager",
+    "tagline": "Connecting people with nature through meaningful campaigns.",
+    "image": "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Olivia Martinez",
+    "role": "Customer Support",
+    "tagline": "Ensuring every customer enjoys a seamless experience.",
+    "image": "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg"
+  }
+]

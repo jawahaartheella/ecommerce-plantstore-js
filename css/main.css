@@ -1,0 +1,57 @@
+/*********** GENERAL STYLES ***********/
+* {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: rgb(16, 185, 129);
+    /* hex code: #11BA82 */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(5, 150, 105);
+    /* hex code: #059669 */
+}
+
+/* LOGO STYLING */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.logo-text {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+}
+
+.logo-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* SCROLLBAR STYLING */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(16, 185, 129);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+

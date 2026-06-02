@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/lucide@0.378.0"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/pages/auth.css">
+    <link rel="stylesheet" href="../../css/responsive/mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>GreenLeaf | Login/Register</title>
+</head>
+<body>
+    <section class="auth-container">
+        <img class="auth-image" src="../../assets/auth-image.png" alt="plant-showcase">
+        <div class="auth-form-container">
+            <form class="login-section">
+                <h1 class="auth-header login-header">Login to your account</h1>
+                <p class="auth-description login-description">Welcome back! Please enter your details.</p>
+                <div>
+                    <label class="auth-label" for="loginEmail">Email Address</label>
+                    <div class="auth-input-container login-email-container">
+                        <i data-lucide="mail" class="auth-icon register-email-icon"></i>
+                        <input type="email" class="auth-input login-email" placeholder="Enter your email" id="loginEmail">
+                    </div>
+                    <label class="auth-label" for="loginPassword">Password</label>
+                    <div class="auth-input-container login-password-container">
+                        <i data-lucide="lock-keyhole" class="auth-icon login-password-icon"></i>
+                        <input type="password" class="auth-input login-password" placeholder="Enter your password" id="loginPassword">
+                        <i data-lucide="eye" class="auth-icon eye-icon"></i>
+                        <i data-lucide="eye-off" class="auth-icon eye-off-icon"></i>
+                    </div>
+                    <div class="auth-checkbox-container remember-me-container">
+                        <input type="checkbox" class="auth-checkbox remember-me-checkbox" id="loginRememberMe">
+                        <label for="loginRememberMe">Remember me</label>
+                    </div>
+                    <button class="auth-btn success-btn login-btn" id="loginBtn">Login</button>
+                    <div class="auth-seperation-container">
+                        <div class="h-row"></div>
+                        <span>or</span>
+                        <div class="h-row"></div>
+                    </div>
+                    <button class="auth-btn auth-google-btn google-login-btn" id="googleRegisterBtn">
+                        <img src="../../assets/google-icon.svg" class="google-logo" alt="google-logo">
+                        <span>Continue with Google</span>
+                    </button>
+                    <p class="signup-link-text">Don't have an account? <span><a href="" class="signup-link">Sign up</a></span></p>
+                </div>
+            </form>
+            <form class="register-section">
+                <h1 class="auth-header register-header">Create your account</h1>
+                <p class="auth-description register-description">Sign up and start your green journey today.</p>
+                <div>
+                    <div class="name-fields-container">
+                        <div class="auth-field-container firstname-container">
+                            <label class="auth-label" for="firstname">First Name</label>
+                            <div class="auth-input-container">
+                                <i data-lucide="user" class="auth-icon user-icon"></i>
+                                <input type="text" class="auth-input firstname-input" placeholder="Enter first name" id="firstname">
+                            </div>
+                            <p class="auth-error-message firstname-error">First Name is Required</p>
+                        </div>
+                        <div class="auth-field-container lastname-container">
+                            <label class="auth-label" for="lastname">Last Name</label>
+                            <div class="auth-input-container">
+                                <i data-lucide="user" class="auth-icon user-icon"></i>
+                                <input type="text" class="auth-input lastname-input" placeholder="Enter last name" id="lastname">
+                            </div>
+                            <p class="auth-error-message lastname-error">Last Name is Required</p>
+                        </div>
+                    </div>
+                    <div class="auth-field-container register-email-container">
+                        <label class="auth-label" for="registerEmail">Email Address</label>
+                        <div class="auth-input-container login-email-container">
+                            <i data-lucide="mail" class="auth-icon login-email-icon"></i>
+                            <input type="email" class="auth-input register-email" placeholder="Enter your email" id="registerEmail">
+                        </div>
+                        <p class="auth-error-message register-email-error">Email is Required</p>
+                    </div>
+                    <div class="password-fields-container">
+                        <div class="auth-field-container register-password-contaier">
+                            <label class="auth-label" for="registerPassword">Password</label>
+                            <div class="auth-input-container password-input-container">
+                                <i data-lucide="lock" class="auth-icon register-password-icon"></i>
+                                <input type="password" class="auth-input register-password" placeholder="Enter your password" id="registerPassword">
+                                <i data-lucide="eye" class="auth-icon eye-icon register-eye-icon"></i>
+                                <i data-lucide="eye-off" class="auth-icon eye-off-icon register-eye-icon"></i>
+                            </div>
+                            <p class="auth-error-message register-password-error">Password is Required</p>
+                        </div>
+                        <div class="auth-field-container confirm-password-container">
+                            <label class="auth-label" for="confirmPassword">Confirm Password</label>
+                            <div class="auth-input-container confirm-input-container">
+                                <i data-lucide="lock-keyhole" class="auth-icon register-password-icon"></i>
+                                <input type="password" class="auth-input confirm-password" placeholder="Re-Enter password" id="confirmPassword">
+                                <i data-lucide="eye" class="auth-icon eye-icon register-eye-icon"></i>
+                                <i data-lucide="eye-off" class="auth-icon eye-off-icon register-eye-icon"></i>
+                            </div>
+                            <p class="auth-error-message confirm-password-error">Passwords do not match</p>
+                        </div>
+                    </div>
+                    <div class="auth-checkbox-container terms-services-container">
+                        <input type="checkbox" class="auth-checkbox terms-services-checkbox" id="termsServices">
+                        <label class="checkbox-label" for="termsServices">I agree to the <a href="" target="_blank">Terms of Service</a> and <a href="" target="_blank" rel="noopener noreferrer">Privacy Policy</a></label>
+                    </div>
+                    <p class="auth-error-message register-checkbox-error">Please accept terms and conditions</p>
+                    <button class="auth-btn success-btn register-btn" id="registerBtn">Register</button>
+                    <div class="auth-seperation-container">
+                        <div class="h-row"></div>
+                        <span>or</span>
+                        <div class="h-row"></div>
+                    </div>
+                    <button class="auth-btn auth-google-btn google-register-btn" id="googleRegisterBtn">
+                        <img src="../../assets/google-icon.svg" class="google-logo" alt="google-logo">
+                        <span>Continue with Google</span>
+                    </button>
+                    <p class="signup-link-text">Already have an account? <span><a href="" class="login-link">Login</a></span></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="../../js/auth.js"></script>
+</body>
+</html>
