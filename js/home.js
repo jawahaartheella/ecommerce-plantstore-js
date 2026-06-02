@@ -4,7 +4,6 @@ import { initializeAddToCartButtons } from "./shared/cart-service.js";
 
 // INITIALIZE ICONS
 lucide.createIcons();
-let productsDataUrl = "../../data/all-products.json"
 
 // RENDER LAYOUT
 renderNavbar();
@@ -37,7 +36,7 @@ setInterval(() => {
     calculateRemainingTime();
 }, 1000);
 
-fetch('../../data/all-products.json')
+fetch('./data/all-products.json')
     .then(res => res.json())
     .then(data => {
         let offerProducts = data.filter(p => p.hasOffer);
@@ -49,7 +48,7 @@ fetch('../../data/all-products.json')
 // RENDERING PLANT CATEGORIES
 function createCategory(category) {
     return `
-        <a href="products.html?category=${category.categoryName}">
+        <a href="./html/pages/products.html?category=${category.categoryName}">
 
             <div class="category-container">
                 <div class="category-label">${category.label}</div>
@@ -59,7 +58,7 @@ function createCategory(category) {
     `
 }
 
-fetch('../../data/categories.json')
+fetch('./data/categories.json')
     .then(res => res.json())
     .then(categories => {
         for(let c of categories) {
@@ -68,7 +67,7 @@ fetch('../../data/categories.json')
 });
 
 // RENDERING NEW ARRIAVLS
-fetch('../../data/all-products.json')
+fetch('./data/all-products.json')
     .then(res => res.json())
     .then(data => {
         let sortedProducts = data.sort((a,b) => {
