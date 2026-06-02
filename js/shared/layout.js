@@ -3,9 +3,12 @@ import { updateCartBadgeCount } from "../shared/cart-service.js"
 // INITIALIZE ICONS
 lucide.createIcons();
 
+let isHomePage = !window.location.pathname.includes("/html/pages");
+const pathPrefix = isHomePage ? "./" : "../../"
+
 // FETCH NAVBAR
 export function renderNavbar() {
-    fetch('../../html/components/navbar.html')
+    fetch(`${pathPrefix}html/components/navbar.html`)
         .then(res => res.text())
         .then(data => {
             document.body.insertAdjacentHTML('afterbegin', data);
@@ -53,7 +56,7 @@ export function renderNavbar() {
 
 // FETCH FOOTER
 export function renderFooter(config) {
-    fetch('../../html/components/footer.html')
+    fetch(`${pathPrefix}html/components/footer.html`)
         .then(res => res.text())
         .then(data => {
             document.body.insertAdjacentHTML('beforeend', data);
@@ -67,7 +70,7 @@ export function renderFooter(config) {
 
 // FETCH CTA SECTION
 export function renderCTASection() {
-    fetch('../../html/components/cta-section.html')
+    fetch(`${pathPrefix}html/components/cta-section.html`)
         .then(res => res.text())
         .then(data => {
             document.querySelector("footer").insertAdjacentHTML("beforebegin", data);
