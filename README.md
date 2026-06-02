@@ -2,6 +2,9 @@
 
 A modern, responsive e-commerce web application built using **Vanilla JavaScript, HTML5, and CSS3**. GreenLeaf provides a complete plant shopping experience, allowing users to browse products, search, filter, manage their cart, and complete the checkout process through an intuitive and responsive interface.
 
+<img width="1919" height="1026" alt="image" src="https://github.com/user-attachments/assets/6c61eaa5-a1ed-463b-8f3f-4ad917712e82" />
+
+
 ---
 
 ## 🎯 Project Purpose
