@@ -10,6 +10,30 @@ export function renderNavbar() {
         .then(data => {
             document.body.insertAdjacentHTML('afterbegin', data);
 
+            let homPrefix = window.location.pathname.includes('/html/pages') ? "../../" : "";
+            let pagePrefix = window.location.pathname.includes('/html/pages') ? "../pages/" : "./html/pages/";
+
+            let desktopNavItems = `
+                <li><a class="nav-link" href="${homPrefix}index.html">Home</a></li>
+                <li><a class="nav-link" href="${pagePrefix}products.html">Plants</a></li>
+                <li><a class="nav-link" href="${pagePrefix}about.html">About</a></li>
+                <li><a class="nav-link" href="${pagePrefix}care-tips.html">Care Tips</a></li>
+            `
+            let mobileNavItems = `
+                <li class="nav-menu-item"><a class="nav-menu-link" href="${homPrefix}index.html">Home</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link" href="${pagePrefix}products.html">Plants</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link" href="${pagePrefix}about.html">About</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link" href="${pagePrefix}care-tips.html">Care Tips</a></li>
+            `
+
+            document.getElementById("desktopNavList").insertAdjacentHTML("beforeend", desktopNavItems);
+            document.getElementById("mobileNavList").insertAdjacentHTML("beforeend", mobileNavItems);
+
+            let cartIcons = document.querySelectorAll(".nav-cart");
+            cartIcons.forEach(i => {
+                i.setAttribute("href", `${pagePrefix}cart.html`);
+            });
+
             document.getElementById('searchInput').addEventListener("keydown", e => {
                 if(e.key === "Enter") {
                     window.location.href = `products.html?search=${e.target.value}`;
