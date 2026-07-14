@@ -13,6 +13,12 @@ The primary goal of this project was to strengthen core frontend development ski
 
 ---
 
+## 🔗 Live Demo
+
+> https://ecommerce-plantstore-js.vercel.app
+
+---
+
 ## ✨ Features
 
 ### 🏠 Home Page
