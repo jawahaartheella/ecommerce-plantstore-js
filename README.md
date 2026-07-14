@@ -158,11 +158,23 @@ The primary goal of this project was to strengthen core frontend development ski
 PLANT-STORE
 ├── assets/
 ├── css/
+│   ├── pages/
+│   ├── shared/
+│   └── responsive/
 ├── data/
+│   ├── all-products.json
+│   ├── categories.json
+│   └── states.json
 ├── html/
 │   ├── components/
 │   └── pages/
 ├── js/
+│   ├── shared/
+│   ├── utils/
+│   ├── home.js
+│   ├── products.js
+│   ├── cart.js
+│   └── ...
 ├── index.html
 └── README.md
 ```
